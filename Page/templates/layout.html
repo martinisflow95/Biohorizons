@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+
+
+
+        <title>BioHorizons Ecuador</title>
+
+
+
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <style>
+        /* Modify the background color */
+
+        .navbar-custom {
+            background-color: white;
+        }
+        /* Modify brand and text color */
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: orange;
+        }
+        </style>
+
+
+
+    </head>
+    <body>
+
+
+
+
+    <!-- Navigation Bar-->
+
+    <nav class="navbar navbar-custom">
+
+                    <div class="nav navbar-nav">
+                      <a class="navbar-brand" href="#">BioHorizon</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li><a href="#">Quienes Somos</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                      <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Nuestros Productos
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Implantes</a></li>
+                            <li><a href="#">Más Implantes</a></li>
+                            <li><a href="#">Implates Bebesitos</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+
+
+                    <ul class="nav navbar-right">
+                          <button class="btn btn-danger navbar-btn">Contáctanos</button>
+                    </ul>
+                  </div>
+    </nav>
+    <img src="{{ user_image }}" alt="User Image"  width="300" height="300">
+
+
+
+
+
+
+
+        {% block body  %}
+
+        {% endblock %}
+
+
+    </body>
+</html>
